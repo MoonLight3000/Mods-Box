@@ -1,0 +1,10 @@
+Mods: {
+	MyFirstMod: {
+		Items: {
+			Starblade: {
+				DisplayName: 星辉之刃
+				Tooltip: "一把由星辰锻造的利刃\n（按住左键可连续挥砍）"
+			}
+		}
+	}
+}
