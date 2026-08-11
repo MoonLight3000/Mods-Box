@@ -1,0 +1,96 @@
+# ============================================================
+# 泰拉瑞亚 tModLoader Mod 开发专用 .gitignore
+# 仓库：MoonLight3000/Mods-Box
+# ============================================================
+
+# ======================
+# 1. 编译 / 构建产物
+# =====================_
+# tModLoader 构建后生成的 .tmod / .dll / .pdb 等
+# 这些由源码编译得到，不应进版本库
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Bb]uild/
+[Oo]ut/
+x64/
+x86/
+
+# 编译输出
+*.tmod
+*.dll
+*.pdb
+*.exe
+
+# ======================
+# 2. Visual Studio / IDE
+# =====================_
+# VS 解决方案 / 项目用户配置
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.vcxproj.filters
+
+# VS 工作区缓存
+.vs/
+
+# JetBrains Rider
+.idea/
+
+# VS Code（如不用可保留）
+.vscode/
+
+# Mono / Xamarin
+*.userprefs
+mono_crash.*
+
+# ======================
+# 3. tModLoader 专属
+# =====================_
+# build.txt 中已用 buildIgnore 忽略的，这里再保险一层
+# 用户级 / 机器相关文件
+*.csproj.user
+Properties/launchSettings.json
+
+# tModLoader 本地缓存与日志
+*.tmodCache
+Thumbs.db
+Desktop.ini
+
+# ======================
+# 4. 临时 / 备份文件
+# =====================_
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ======================
+# 5. 日志 / 运行时产物
+# =====================_
+*.log
+logs/
+
+# ======================
+# 6. 大体积资源（按需取消注释）
+# =====================_
+# 如果你的 Mod 包含未压缩的大贴图 / 音频，
+# 建议用 Git LFS 管理，而不是直接提交
+# *.png
+# *.wav
+# *.mp3
+# *.ogg
+
+# ======================
+# 7. 个人 / 敏感信息
+# =====================_
+*.key
+*.pem
+config_private.*
+secret.*
