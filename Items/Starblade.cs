@@ -23,6 +23,10 @@ namespace MyFirstMod.Items
             Item.rare = ItemRarityID.Pink;          // 稀有度颜色：粉色(不错的装备)
             Item.UseSound = SoundID.Item1;          // 挥砍时播放的音效
             Item.autoReuse = true;                  // true = 按住鼠标左键可连续攻击
+
+
+            Item.shoot = ModContent.ProjectileType<Content.Projectiles.StarbladeProjectile>(); // 发射的弹幕类型：我们自定义的 StarbladeProjectile
+            Item.shootSpeed = 20f;
         }
 
         // AddRecipes：定义这个道具「怎么合成」。

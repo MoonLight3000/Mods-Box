@@ -3,7 +3,11 @@ Mods: {
 		Items: {
 			Starblade: {
 				DisplayName: Starblade
-				Tooltip: "A blade forged from the stars\n(Hold left click to swing continuously)"
+				Tooltip:
+					'''
+					A blade forged from the stars
+					(Hold left click to swing continuously)
+					'''
 			}
 		}
 	}
